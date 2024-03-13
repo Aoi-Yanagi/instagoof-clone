@@ -3,7 +3,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import { useLocation } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../firebase/firebase";
-import Navbar from "../../components/Navbar/NAvbar";
+import Navbar from "../../components/Navbar/Navbar";
 //Instead of adding the sidebar component to every page, we can add it only once to the page layout component and wrap the children with it.This way, we can have a sidebar on every page except the Authpage.
 const PageLayout = ({ children }) => {
   const { pathname } = useLocation();
